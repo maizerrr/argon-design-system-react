@@ -29,6 +29,8 @@ import Login from "views/examples/Login.js";
 import Profile from "views/examples/Profile.js";
 import Register from "views/examples/Register.js";
 
+import Home from "views/rakudoku/Home.js";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
@@ -54,6 +56,11 @@ root.render(
         path="/register-page"
         exact
         render={(props) => <Register {...props} />}
+      />
+      <Route
+        path="/home"
+        exact
+        render={(props) => <Home {...props} />}
       />
       <Redirect to="/" />
     </Switch>
