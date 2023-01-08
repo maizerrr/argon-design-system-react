@@ -30,13 +30,15 @@ import Profile from "views/examples/Profile.js";
 import Register from "views/examples/Register.js";
 
 import Home from "views/rakudoku/Home.js";
+import AboutUs from "views/rakudoku/AboutUs.js";
+import Service from "views/rakudoku/Service.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <BrowserRouter>
     <Switch>
-      <Route path="/" exact render={(props) => <Index {...props} />} />
+      <Route path="/demo" exact render={(props) => <Index {...props} />} />
       <Route
         path="/landing-page"
         exact
@@ -57,11 +59,23 @@ root.render(
         exact
         render={(props) => <Register {...props} />}
       />
+      {/* Rakudoku pages */}
       <Route
-        path="/home"
+        path="/"
         exact
         render={(props) => <Home {...props} />}
       />
+      <Route
+        path="/about"
+        exact
+        render={(props) => <AboutUs {...props} />}
+      />
+      <Route
+        path="/service"
+        exact
+        render={(props) => <Service {...props} />}
+      />
+      {/* Default */}
       <Redirect to="/" />
     </Switch>
   </BrowserRouter>

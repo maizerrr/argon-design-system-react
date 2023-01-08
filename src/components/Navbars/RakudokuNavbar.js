@@ -107,7 +107,7 @@ class RakudokuNavbar extends React.Component {
                   </NavItem>
                   <NavItem>
                     <NavLink
-                      to="/"
+                      to="/about"
                       tag={Link}
                       id="aboutus_ref"
                     >
@@ -120,7 +120,7 @@ class RakudokuNavbar extends React.Component {
                   </NavItem>
                   <NavItem>
                     <NavLink
-                      to="/"
+                      to="/service"
                       tag={Link}
                       id="service_ref"
                     >

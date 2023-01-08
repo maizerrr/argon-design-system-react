@@ -18,24 +18,17 @@ import {
   Container,
   Row,
   Col,
-  CardHeader,
   NavItem,
   NavLink,
   Nav,
   TabContent,
   TabPane,
   Progress,
-  UncontrolledCarousel
 } from "reactstrap";
 
 // core components
 import RakudokuNavbar from "components/Navbars/RakudokuNavbar.js";
 import RakudokuFooter from "components/Footers/RakudokuFooter.js";
-import CardsFooter from "components/Footers/CardsFooter.js";
-import SimpleFooter from "components/Footers/SimpleFooter.js";
-
-// index page sections
-import Download from "../IndexSections/Download.js";
 
 // images
 import bg1 from "assets/img/theme/image-1.jpeg";
@@ -53,16 +46,16 @@ import bg1 from "assets/img/theme/image-1.jpeg";
 //   }
 // ];
 
-const itemsRight = [
-  {
-    caption: "",
-    header: ""
-  },
-  {
-    caption: "",
-    header: ""
-  }
-];
+// const itemsRight = [
+//   {
+//     caption: "",
+//     header: ""
+//   },
+//   {
+//     caption: "",
+//     header: ""
+//   }
+// ];
 
 class Home extends React.Component {
   state = {
@@ -79,6 +72,11 @@ class Home extends React.Component {
     document.documentElement.scrollTop = 0;
     document.scrollingElement.scrollTop = 0;
     this.refs.main.scrollTop = 0;
+    window.addEventListener("resize", () => {
+      this.setState({
+        isMobile: window.innerWidth < 992
+      })
+    }, false);
   }
   render() {
     return (
@@ -389,7 +387,7 @@ class Home extends React.Component {
                 </Col>
               </Row>
               <Row className="row-grid justify-content-center">
-                <Col lg="6" className="h-100">
+                <Col lg="6">
                   <div className="mb-3">
                     <small className="text-uppercase font-weight-bold text-white">
                       The way we see
@@ -429,7 +427,7 @@ class Home extends React.Component {
                       </NavItem>
                     </Nav>
                   </div>
-                  <Card className="shadow" >
+                  <Card className={this.state.isMobile?"shadow":"shadow h-75"} >
                     <CardBody>
                       <TabContent activeTab={"tabsLeft" + this.state.tabsLeft}>
                         <TabPane tabId="tabsLeft1">
@@ -496,7 +494,7 @@ class Home extends React.Component {
                       </NavItem>
                     </Nav>
                   </div>
-                  <Card className="shadow" >
+                  <Card className={this.state.isMobile?"shadow":"shadow h-75"} >
                     <CardBody>
                       <TabContent activeTab={"tabsRight" + this.state.tabsRight}>
                         <TabPane tabId="tabsRight1">
