@@ -167,7 +167,7 @@ class Home extends React.Component {
                           {/* <span className="text-white">Please provide some basic information and our staff member will contact you</span> */}
                         </div>
                         <hr />
-                        <Form role="form">
+                        <Form role="form" id="signup_form">
                           <FormGroup
                             className={classnames("mb-3", {
                               focused: this.state.nameFocused
