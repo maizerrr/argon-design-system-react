@@ -94,8 +94,8 @@ class AboutUs extends React.Component {
                         <p className="display-3 text-default">"I can do it if I try"</p>
                         <span className="">You will realize how many possibilities you have!</span>
                       </h1>
-                      <p className="blockquote-footer lead text-black">
-                        Nanae Hirai, founder of Rakudoku
+                      <p className="lead text-black">
+                        — Nanae Hirai, founder of Rakudoku
                       </p>
                     </Col>
                   </Row>
@@ -219,8 +219,8 @@ class AboutUs extends React.Component {
                     the entire world.
                   </p>
                   <p className="lead">
-                    Although we are now away from Japan and in a very different environment, 
-                    Let's enjoy the Rakudoku lesson and improve ourselves together!
+                    We are excited to leave Japan and function in a very different environment! 
+                    Let's enjoy Rakudoku lessons and improve ourselves together!
                   </p>
                 </Col>
               </Row>

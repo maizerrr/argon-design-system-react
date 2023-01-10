@@ -119,7 +119,7 @@ class Home extends React.Component {
                         <span>in a fun and easy way</span>
                       </h1>
                       <p className="lead text-black">
-                        After taking the course, you will be able to read and understand 2 to 7 times faster than you are now.
+                        Through taking the course, you will be able to read and understand 2 to 7 times faster.
                       </p>
                     </Col>
                   </Row>
@@ -153,9 +153,9 @@ class Home extends React.Component {
                     Over <a className="text-default" style={{"pointerEvents": "none"}}>50,000</a> people have chosen Rakudoku
                   </h3>
                   <p className="lead text-dark">
-                    In japan, more than 50,000 people have taken the Rakudoku Experience Seminar, 
+                    In Japan, more than 50,000 people have taken the Rakudoku trial seminar, 
                     and more than 90% of them have realized the effect of speed reading. 
-                    If you want to experience what speed reading is like, please take a trial seminar first.
+                    If you want to experience speed reading, we offer a free trial seminar.
                   </p>
                 </Col>
                 <Col className="mb-lg-auto" lg="5">
@@ -277,10 +277,10 @@ class Home extends React.Component {
                           </div>
                           <h6 className="text-primary text-uppercase">For career</h6>
                           <p className="description mt-3">
-                            As business people and students, speed reading helps 
-                            improving your information processing and communication 
-                            skills. You will also become more creative and more 
-                            time-efficient.
+                            As business people and students, speed reading helps to 
+                            improve your information processing and communication 
+                            skills, as well as obtaining creativity and 
+                            time-efficiency.
                           </p>
                           <div>
                             <Badge color="primary" pill className="mr-1">skills</Badge>
@@ -308,8 +308,8 @@ class Home extends React.Component {
                           </div>
                           <h6 className="text-warning text-uppercase">For self improvement</h6>
                           <p className="description mt-3">
-                            As an individual, speed reading helps improve your scholastic ability 
-                            and build self-esteem. It also encourages you to become a life-long learner.
+                            As an individual, speed reading helps by improving your scholastic ability, 
+                            building self-esteem, and reinforcing the mentality to become a life-long learner.
                           </p>
                           <div>
                             <Badge color="warning" pill className="mr-1">learning</Badge>
@@ -336,9 +336,9 @@ class Home extends React.Component {
                           </div>
                           <h6 className="text-success text-uppercase">For health and life</h6>
                           <p className="description mt-3">
-                            Experiments show that speed reading helps prevent aging of your brain 
-                            and it is also good for mental health. Besides, it helps you to stay 
-                            focused and perform better in other area like sports.
+                            Experiments show that speed reading not only prevents brain aging but also good 
+                            for mental health. Having an increased focus means you can perform in better 
+                            areas as well, such as sports, communication, etc.
                           </p>
                           <div>
                             <Badge color="success" pill className="mr-1">health</Badge>
@@ -379,7 +379,7 @@ class Home extends React.Component {
             <Container>
               <Row className="justify-content-center text-center mb-lg">
                 <Col lg="8">
-                  <h2 className="display-4 text-white">And here's how Rakudoku works</h2>
+                  <h2 className="display-4 text-white">How Rakudoku works</h2>
                   <p className="lead text-white">
                     The process of reading can be broken down into two processes: 
                     "seeing" with the eyes and "understanding" with the mind.
@@ -447,7 +447,7 @@ class Home extends React.Component {
                           <p className="description">
                             Increasing the amount of characters that can be captured at once 
                             will lead to faster reading. We will train you to broaden your 
-                            horizons so that you can catch more information at once.
+                            horizons so that you can see more information at once.
                           </p>
                         </TabPane>
                       </TabContent>
@@ -502,10 +502,9 @@ class Home extends React.Component {
                             To "understand" faster
                           </h6>
                           <p className="description">
-                            You can read faster by being able to process information received 
-                            by your eyes faster. The brain has the ability to be speedy. By 
-                            repeating training, you will be able to understand information 
-                            caught by your eyes faster.
+                            By utilizing your brain's potential, you will be able to process 
+                            information at a higher rate. Through our training, you will be able 
+                            to process the information perceived from your eyes faster.
                           </p>
                         </TabPane>
                         <TabPane tabId="tabsRight2">
@@ -517,7 +516,7 @@ class Home extends React.Component {
                             a book about a subject that interests you? As your brain's matching 
                             speed increases, it pulls out relevant information that you already 
                             have in your head so you can understand it faster. With repeated 
-                            training, this intuition becomes easier to work.
+                            training, you will be able to master this intuition.
                           </p>
                         </TabPane>
                       </TabContent>
