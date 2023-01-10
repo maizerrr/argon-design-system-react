@@ -60,7 +60,8 @@ import bg1 from "assets/img/theme/image-1.jpeg";
 class Home extends React.Component {
   state = {
     tabsLeft: 1,
-    tabsRight: 1
+    tabsRight: 1,
+    isMobile: window.innerWidth < 992
   };
   toggleNavs = (e, state, index) => {
     e.preventDefault();
