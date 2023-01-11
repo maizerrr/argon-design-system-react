@@ -38,7 +38,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <Switch>
-      <Route path="/demo" exact render={(props) => <Index {...props} />} />
+      {/* <Route path="/demo" exact render={(props) => <Index {...props} />} />
       <Route
         path="/landing-page"
         exact
@@ -58,7 +58,8 @@ root.render(
         path="/register-page"
         exact
         render={(props) => <Register {...props} />}
-      />
+      /> */}
+      
       {/* Rakudoku pages */}
       <Route
         path="/"

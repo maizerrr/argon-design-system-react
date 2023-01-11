@@ -57,7 +57,7 @@ class RakudokuNavbar extends React.Component {
             <Container>
               <NavbarBrand className="mr-lg-5" to="/" tag={Link}>
                 <img
-                  style={{"max-width":"200px", "max-height":"20px"}}
+                  style={{"max-width":"250px", "max-height":"25px"}}
                   alt="≡"
                   src={require("assets/img/brand/rakudoku-logo-dark.png")}
                 />
@@ -77,7 +77,7 @@ class RakudokuNavbar extends React.Component {
                     <Col className="collapse-brand" xs="6">
                       <Link to="/">
                         <img
-                          style={{"max-width":"200px", "max-height":"20px"}}
+                          style={{"max-width":"250px", "max-height":"25px"}}
                           alt="..."
                           src={require("assets/img/brand/rakudoku-logo-green.png")}
                         />

@@ -10,11 +10,6 @@ import {
   CardBody,
   CardImg,
   Form,
-  FormGroup,
-  Input,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroup,
   Container,
   Row,
   Col,
@@ -146,17 +141,18 @@ class Home extends React.Component {
             {/* 1st Hero Variation */}
           </div>
 
-          <section className="section section-lg">
+          <section className="section section-lg" id="signup_form">
             <Container className="py-md">
               <Row className="row-grid justify-content-between align-items-center">
                 <Col lg="6">
                   <h3 className="display-3 text-dark">
-                    Over <a className="text-default" style={{"pointerEvents": "none"}}>50,000</a> people have chosen Rakudoku
+                    Over <a className="text-default" style={{"pointerEvents": "none"}}>50,000</a> people have chosen RAKUDOKU
                   </h3>
                   <p className="lead text-dark">
-                    In Japan, more than 50,000 people have taken the Rakudoku trial seminar, 
+                    In Japan, more than 50,000 people have taken the RAKUDOKU trial seminar, 
                     and more than 90% of them have realized the effect of speed reading. 
-                    If you want to experience speed reading, we offer a free trial seminar.
+                    If you want to experience speed reading, we offer a free trial seminar 
+                    until the end of January, 2023.
                   </p>
                 </Col>
                 <Col className="mb-lg-auto" lg="5">
@@ -168,8 +164,8 @@ class Home extends React.Component {
                           {/* <span className="text-white">Please provide some basic information and our staff member will contact you</span> */}
                         </div>
                         <hr />
-                        <Form role="form" id="signup_form">
-                          <FormGroup
+                        <Form role="form">
+                          {/* <FormGroup
                             className={classnames("mb-3", {
                               focused: this.state.nameFocused
                             })}
@@ -237,13 +233,21 @@ class Home extends React.Component {
                                 }
                               />
                             </InputGroup>
-                          </FormGroup>
+                          </FormGroup> */}
+                          <div className="text-left">
+                            <p className="lead text-white">
+                              If you are interested, please fill out this Google form and
+                              our staff members will contact you shortly.
+                            </p>
+                          </div>
                           <div className="text-center">
                             <Button
                               className="my-4"
                               color="white"
                               outline
                               type="button"
+                              href="https://forms.gle/zuUbnSD5xVjAwspb9"
+                              target="_blank"
                             >
                               Contact us
                             </Button>
@@ -261,8 +265,8 @@ class Home extends React.Component {
             <Container>
               <Row className="justify-content-center text-center mb-lg">
                 <Col lg="8">
-                  <h2 className="display-3">Rakudoku</h2>
-                  <p className="lead text-muted">
+                  <h2 className="display-3">RAKUDOKU</h2>
+                  <p className="display-4 text-muted">
                     is benefitial in various ways
                   </p>
                 </Col>
@@ -276,12 +280,11 @@ class Home extends React.Component {
                           <div className="icon icon-shape icon-shape-primary rounded-circle mb-4">
                             1
                           </div>
-                          <h6 className="text-primary text-uppercase">For career</h6>
+                          <h6 className="text-primary text-uppercase">For career & study</h6>
                           <p className="description mt-3">
-                            As business people and students, speed reading helps to 
-                            improve your information processing and communication 
-                            skills, as well as obtaining creativity and 
-                            time-efficiency.
+                            For professionals and students, speed reading can improve information 
+                            processing, reading skills, and productivity. The Rakudoku speed reading 
+                            method also improves communication skills and creativity.
                           </p>
                           <div>
                             <Badge color="primary" pill className="mr-1">skills</Badge>
@@ -294,7 +297,12 @@ class Home extends React.Component {
                             style={{"position": "absolute", "bottom": "30px"}}
                             color="primary"
                             href="#pablo"
-                            onClick={(e) => e.preventDefault()}
+                            onClick={(e) => {
+                              e.preventDefault();
+                              document.getElementById("testimonial").scrollIntoView({
+                                behavior: "smooth", block: "start"
+                              });
+                            }}
                           >
                             Learn more
                           </Button>
@@ -310,11 +318,11 @@ class Home extends React.Component {
                           <h6 className="text-warning text-uppercase">For self improvement</h6>
                           <p className="description mt-3">
                             As an individual, speed reading helps by improving your scholastic ability, 
-                            building self-esteem, and reinforcing the mentality to become a life-long learner.
+                            building confidence in every aspect of life, and reinforcing a life-long learning mentality.
                           </p>
                           <div>
                             <Badge color="warning" pill className="mr-1">learning</Badge>
-                            <Badge color="warning" pill className="mr-1">self-esteem</Badge>
+                            <Badge color="warning" pill className="mr-1">confidence</Badge>
                           </div>
                           <br /><br /><br />
                           <Button
@@ -322,7 +330,12 @@ class Home extends React.Component {
                             style={{"position": "absolute", "bottom": "30px"}}
                             color="warning"
                             href="#pablo"
-                            onClick={(e) => e.preventDefault()}
+                            onClick={(e) => {
+                              e.preventDefault();
+                              document.getElementById("testimonial").scrollIntoView({
+                                behavior: "smooth", block: "start"
+                              });
+                            }}
                           >
                             Learn more
                           </Button>
@@ -337,9 +350,9 @@ class Home extends React.Component {
                           </div>
                           <h6 className="text-success text-uppercase">For health and life</h6>
                           <p className="description mt-3">
-                            Experiments show that speed reading not only prevents brain aging but also good 
-                            for mental health. Having an increased focus means you can perform in better 
-                            areas as well, such as sports, communication, etc.
+                            Experiments show that speed reading not only prevents brain aging but 
+                            is also beneficial for mental health. An increased focus enables you 
+                            to perform in various areas such as sports, art, communication, and more.
                           </p>
                           <div>
                             <Badge color="success" pill className="mr-1">health</Badge>
@@ -352,7 +365,12 @@ class Home extends React.Component {
                             style={{"position": "absolute", "bottom": "30px"}}
                             color="success"
                             href="#pablo"
-                            onClick={(e) => e.preventDefault()}
+                            onClick={(e) => {
+                              e.preventDefault();
+                              document.getElementById("testimonial").scrollIntoView({
+                                behavior: "smooth", block: "start"
+                              });
+                            }}
                           >
                             Learn more
                           </Button>
@@ -380,7 +398,7 @@ class Home extends React.Component {
             <Container>
               <Row className="justify-content-center text-center mb-lg">
                 <Col lg="8">
-                  <h2 className="display-4 text-white">How Rakudoku works</h2>
+                  <h2 className="display-4 text-white">How RAKUDOKU works</h2>
                   <p className="lead text-white">
                     The process of reading can be broken down into two processes: 
                     "seeing" with the eyes and "understanding" with the mind.
@@ -436,9 +454,9 @@ class Home extends React.Component {
                             To "see" faster
                           </h6>
                           <p className="description">
-                            Being able to see the letters faster will lead to faster reading. 
-                            We will focus on "seeing letters" and perform visual training to 
-                            speed up the eyes.
+                            Being able to process words faster will lead to faster reading. 
+                            This is accomplished with visual training focused on speeding 
+                            up eye movement.
                           </p>
                         </TabPane>
                         <TabPane tabId="tabsLeft2">
@@ -446,9 +464,9 @@ class Home extends React.Component {
                             To "see" more
                           </h6>
                           <p className="description">
-                            Increasing the amount of characters that can be captured at once 
-                            will lead to faster reading. We will train you to broaden your 
-                            horizons so that you can see more information at once.
+                            Increasing the amount of words that can be captured at once will 
+                            lead to faster reading. We will train you to broaden your peripheral 
+                            vision so that you can take in more information at once.
                           </p>
                         </TabPane>
                       </TabContent>
@@ -510,14 +528,13 @@ class Home extends React.Component {
                         </TabPane>
                         <TabPane tabId="tabsRight2">
                           <h6 className="text-dark text-uppercase">
-                            To "recall" faster
+                            To be able to 'predict' what's coming
                           </h6>
                           <p className="description">
-                            Have you ever had the experience of being able to quickly understand 
-                            a book about a subject that interests you? As your brain's matching 
-                            speed increases, it pulls out relevant information that you already 
-                            have in your head so you can understand it faster. With repeated 
-                            training, you will be able to master this intuition.
+                            When you read about a subject you're familiar with, you're able to 
+                            understand the material quickly. Your brain recalls the relevant 
+                            information that you already know. With repeated training, your 
+                            ability to recall and predict information becomes sharper and faster. 
                           </p>
                         </TabPane>
                       </TabContent>
@@ -544,7 +561,7 @@ class Home extends React.Component {
             </div>
           </section>
 
-          <section className="section section-lg">
+          <section className="section section-lg" id="testimonial">
             <Container>
               <Row className="row-grid align-items-center">
                 <Col md="6">
@@ -572,13 +589,13 @@ class Home extends React.Component {
                         />
                       </svg>
                       <h4 className="display-3 font-weight-bold text-white">
-                        Testimonial
+                        Feedbacks from students
                       </h4>
                       <p className="lead text-italic text-white">
-                        Rakudoku students recommend our service for many reasons; 
+                        RAKUDOKU students recommend our service for many reasons; 
                         the most common one is "the lesson is fun and interesting." 
                         Over 60% of students believe that speed reading training 
-                        provided by Rakudoku is enjoyable and thus introduce it 
+                        provided by RAKUDOKU is enjoyable and thus introduce it 
                         to their friends.
                       </p>
                     </blockquote>
@@ -589,12 +606,12 @@ class Home extends React.Component {
                     <div className="icon icon-lg icon-shape icon-shape-warning shadow rounded-circle mb-5">
                       <i className="ni ni-hat-3" />
                     </div>
-                    <h3>Why do our customers recommend Rakudoku</h3>
+                    <h3>Why do our customers recommend RAKUDOKU</h3>
                     <div className="progress-wrapper">
                       <div className="progress-info">
                         <div className="progress-label">
                           <span className="heading text-dark">
-                            Because lessons provided by Rakudoku are fun
+                            Because lessons provided by RAKUDOKU are fun
                           </span>
                         </div>
                         <div className="progress-percentage">

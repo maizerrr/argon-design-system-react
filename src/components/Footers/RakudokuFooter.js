@@ -39,7 +39,7 @@ class RakudokuFooter extends React.Component {
               <Col md="12">
                 <div className="copyright">
                   © {new Date().getFullYear()}{" "}
-                  <a className="text-default">Rakudoku USA</a>
+                  <a className="text-default">RAKUDOKU USA</a>
                 </div>
               </Col>
             </Row>

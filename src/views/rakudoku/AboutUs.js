@@ -1,28 +1,11 @@
 import React from "react";
-import classnames from "classnames";
 
 import {
-  Badge,
-  Button,
   Card,
-  CardBody,
   CardImg,
-  Form,
-  FormGroup,
-  Input,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroup,
   Container,
   Row,
   Col,
-  CardHeader,
-  NavItem,
-  NavLink,
-  Nav,
-  TabContent,
-  TabPane,
-  Progress,
   UncontrolledCarousel
 } from "reactstrap";
 
@@ -91,11 +74,11 @@ class AboutUs extends React.Component {
                     >
                       <h1 className="display-3 text-black">
                         From "I can't do it" to 
-                        <p className="display-3 text-default">"I can do it if I try"</p>
+                        <p className="display-3 text-default">"I can do it (if I try)"</p>
                         <span className="">You will realize how many possibilities you have!</span>
                       </h1>
                       <p className="lead text-black">
-                        — Nanae Hirai, founder of Rakudoku
+                        — Nanae Hirai, founder of RAKUDOKU
                       </p>
                     </Col>
                   </Row>
@@ -136,7 +119,7 @@ class AboutUs extends React.Component {
                     <p>
                       Hello, my name is Nanae Hirai. 
                       It was 2005 when I first encountered speed-reading. 
-                      I was impressed by the instructor’s wonderful personality and felt great results. 
+                      I was impressed by the instructor's wonderful personality and felt great results. 
                       I realized that I might be able to contribute to a lot of people if they start liking books and save more time for themselves with their mastery of speed-reading. 
                       On the other hand, many people might end up quitting before mastering it because they might feel it was boring and hard to do. 
                       That is why I, who could easily get bored by the existing method of speed-reading, created the program of RAKUDOKU. 
@@ -144,8 +127,8 @@ class AboutUs extends React.Component {
                       Instead of trying to increase your reading speed as dramatically as 10-20 times faster, we set our goal to 2-7 times faster than before while enjoying reading. 
                       Our training menu was built so that our students could enjoy their interactions among themselves by taking our lessons. 
                       While enjoying reading a book, you will be able to read at least twice as fast…that is the RAKUDOKU program. 
-                      Students would change from the feeling of “Oh, I can’t do it.” or “This is hard!” to the magical feelings of “I may be able to do it!” or “Wow! Why could I read that fast?” - is the Rakudoku program. 
-                      The RAKUDOKU program may change your belief of “can’t do” to “ maybe I can” and “Yes, I can!” 
+                      Students would change from the feeling of “Oh, I can't do it.” or “This is hard!” to the magical feelings of “I may be able to do it!” or “Wow! Why could I read that fast?” - is the Rakudoku program. 
+                      The RAKUDOKU program may change your belief of “can't do” to “ maybe I can” and “Yes, I can!” 
                       Your reading speed will surely go up. But I would like you to feel your true possibilities. This is why I created the RAKUDOKU program. 
                       Please do not give up on your possibilities, and give it a try!
                     </p>
@@ -177,8 +160,8 @@ class AboutUs extends React.Component {
               <Row className="justify-content-center text-center">
                 <Col lg="8">
                   <h2 className="display-3 font-weight-light text-white">
-                    Currently, Rakudoku has <a className="font-weight-bold">83</a> schools in Japan. 
-                    And we are opening our first school oversea in <a className="font-weight-bold">California, US</a>
+                    Currently, RAKUDOKU has <a className="font-weight-bold">83</a> schools in Japan. 
+                    And we are opening our first school oversea in <a className="font-weight-bold">California, USA</a>
                   </h2>
                 </Col>
               </Row>
@@ -211,17 +194,49 @@ class AboutUs extends React.Component {
                 </Col>
                 <Col lg="6">
                   <h2 className="display-4">
-                    Rakudoku Silicon Valley School
+                    RAKUDOKU Silicon Valley School
                   </h2>
                   <p className="lead">
-                    We are located in the same area as headquarters of Apple, Facebook, Google, etc.
-                    Similar to these companies, we aimed to promote our brand from Silicon Valley to
-                    the entire world.
+                    We are excited to launch our first school in Silicon Valley - the home to Apple, Facebook, and Google headquarters. 
+                    We aim to establish our program and further promote our mission to the entire world.
                   </p>
                   <p className="lead">
-                    We are excited to leave Japan and function in a very different environment! 
-                    Let's enjoy Rakudoku lessons and improve ourselves together!
+                    Let's enjoy RAKUDOKU lessons and improve ourselves together!
                   </p>
+                </Col>
+              </Row>
+            </Container>
+          </section>
+
+          <section className="section section-lg">
+            <Container>
+              <Row>
+                <Col lg="6">
+                  <h3 className="display-4">
+                    Testimonial
+                  </h3>
+                  <p className="lead">
+                    At first I was skeptical, but Rakudoku has truly surprised me by bringing out more of my potential. 
+                    The teachers are some of the nicest, most intuitive people out there. Not only have I learned to 
+                    speed read, but I've learned how to make the most out of my intuition in life. Don't skip out on Rakudoku!
+                  </p>
+                </Col>
+                <Col className="mb-5 mb-lg-0" lg="6" md="6">
+                  <br />
+                  <div className="px-4">
+                    <img 
+                      alt="..."
+                      className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
+                      src={require("assets/img/theme/testimonial-1.jpeg")}
+                      style={{ width: "200px" }}
+                    />
+                    <div className="pt-4 text-center">
+                      <h5 className="title">
+                        <span className="d-block mb-1">Caprianna</span>
+                        <small className="h6 text-muted">23, San Francisco</small>
+                      </h5>
+                    </div>
+                  </div>
                 </Col>
               </Row>
             </Container>

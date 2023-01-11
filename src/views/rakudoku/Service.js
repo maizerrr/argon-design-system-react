@@ -1,30 +1,13 @@
 import React from "react";
-import classnames from "classnames";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 import {
-  Badge,
-  Button,
   Card,
   CardBody,
-  CardImg,
-  Form,
-  FormGroup,
-  Input,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroup,
   Container,
   Row,
   Col,
-  CardHeader,
-  NavItem,
-  NavLink,
-  Nav,
-  TabContent,
-  TabPane,
-  Progress,
-  UncontrolledTooltip
+  // UncontrolledTooltip
 } from "reactstrap";
 
 import RakudokuNavbar from "components/Navbars/RakudokuNavbar";
@@ -81,8 +64,9 @@ class Service extends React.Component {
                       </h1>
                       <p className="lead text-black">
                         Learning to read fast requires constant training. 
-                        With Rakudoku, you can easily read 4 to 8 times a 
-                        month over a period of 3 to 6 months.
+                        With RAKUDOKU, you can easily read 2 to 7 times 
+                        faster with 4 to 8 lessons a month over a 
+                        period of 4 to 8 months.
                       </p>
                     </Col>
                   </Row>
@@ -129,86 +113,92 @@ class Service extends React.Component {
                 <Col lg="12">
                   <Row className="row-grid">
                     <Col lg="6">
-                      <Card 
-                        className="card-lift--hover shadow border-0 bg-gradient-light"
-                        to="/"
-                        tag={Link}
-                        id="plan_0"
-                      >
-                        <CardBody className="py-5">
-                          <h6 className="text-white font-weight-bold">Trial lesson/90min</h6>
-                          <p className="text-white">free</p>
-                        </CardBody>
-                      </Card>
-                      <UncontrolledTooltip delay={0} target="plan_0">
-                        Visit our homepage to fill out the signup form
-                      </UncontrolledTooltip>
+                      <a href="https://forms.gle/zuUbnSD5xVjAwspb9" target="_blank">
+                        <Card 
+                          className="card-lift--hover shadow border-0 bg-gradient-light"
+                          id="plan_0"
+                        >
+                          <CardBody className="py-5">
+                            <h6 className="text-white font-weight-bold">Trial lesson/60min</h6>
+                            <p className="text-white">free</p>
+                          </CardBody>
+                        </Card>
+                        {/* <UncontrolledTooltip delay={0} target="plan_0">
+                          Please fill out the signup form and our staff members will contact you
+                        </UncontrolledTooltip> */}
+                      </a>
                     </Col>
                     <Col lg="6">
-                      <Card 
-                        className="card-lift--hover shadow border-0 bg-gradient-warning"
-                        to="/"
-                        tag={Link}
-                        id="plan_1"
-                      >
-                        <CardBody className="py-5">
-                          <h6 className="text-white font-weight-bold">2 lessons/month</h6>
-                          <p className="text-white">$120</p>
-                        </CardBody>
-                      </Card>
-                      <UncontrolledTooltip delay={0} target="plan_1">
-                        Visit our homepage to fill out the signup form
-                      </UncontrolledTooltip>
+                      <a href="https://forms.gle/zuUbnSD5xVjAwspb9" target="_blank">
+                        <Card 
+                          className="card-lift--hover shadow border-0 bg-gradient-warning"
+                          id="plan_1"
+                        >
+                          <CardBody className="py-5">
+                            <h6 className="text-white font-weight-bold">2 lessons/month</h6>
+                            <p className="text-white">$120</p>
+                          </CardBody>
+                        </Card>
+                        {/* <UncontrolledTooltip delay={0} target="plan_1">
+                          Please fill out the signup form and our staff members will contact you
+                        </UncontrolledTooltip> */}
+                      </a>
                     </Col>
                   </Row>
                   <Row className="row-grid">
                     <Col lg="4">
-                      <Card 
-                        className="card-lift--hover shadow border-0 bg-gradient-primary"
-                        to="/"
-                        tag={Link}
-                        id="plan_2"
-                      >
-                        <CardBody className="py-5">
-                          <h6 className="text-white font-weight-bold">4 lessons/month</h6>
-                          <p className="text-white">$240</p>
-                        </CardBody>
-                      </Card>
-                      <UncontrolledTooltip delay={0} target="plan_2">
-                        Visit our homepage to fill out the signup form
-                      </UncontrolledTooltip>
+                      <a href="https://forms.gle/zuUbnSD5xVjAwspb9" target="_blank">
+                        <Card 
+                          className="card-lift--hover shadow border-0 bg-gradient-primary"
+                          href="https://forms.gle/zuUbnSD5xVjAwspb9"
+                          target="_blank"
+                          id="plan_2"
+                        >
+                          <CardBody className="py-5">
+                            <h6 className="text-white font-weight-bold">4 lessons/month</h6>
+                            <p className="text-white">$240</p>
+                          </CardBody>
+                        </Card>
+                        {/* <UncontrolledTooltip delay={0} target="plan_2">
+                          Please fill out the signup form and our staff members will contact you
+                        </UncontrolledTooltip> */}
+                      </a>
                     </Col>
                     <Col lg="4">
-                      <Card 
-                        className="card-lift--hover shadow border-0 bg-gradient-default"
-                        to="/"
-                        tag={Link}
-                        id="plan_3"
-                      >
-                        <CardBody className="py-5">
-                          <h6 className="text-white font-weight-bold">6 lessons/month</h6>
-                          <p className="text-white">$360</p>
-                        </CardBody>
-                      </Card>
-                      <UncontrolledTooltip delay={0} target="plan_3">
-                        Visit our homepage to fill out the signup form
-                      </UncontrolledTooltip>
+                      <a href="https://forms.gle/zuUbnSD5xVjAwspb9" target="_blank">
+                        <Card 
+                          className="card-lift--hover shadow border-0 bg-gradient-default"
+                          href="https://forms.gle/zuUbnSD5xVjAwspb9"
+                          target="_blank"
+                          id="plan_3"
+                        >
+                          <CardBody className="py-5">
+                            <h6 className="text-white font-weight-bold">6 lessons/month</h6>
+                            <p className="text-white">$360</p>
+                          </CardBody>
+                        </Card>
+                        {/* <UncontrolledTooltip delay={0} target="plan_3">
+                          Please fill out the signup form and our staff members will contact you
+                        </UncontrolledTooltip> */}
+                      </a>
                     </Col>
                     <Col lg="4">
-                      <Card 
-                        className="card-lift--hover shadow border-0 bg-gradient-info"
-                        to="/"
-                        tag={Link}
-                        id="plan_4"
-                      >
-                        <CardBody className="py-5">
-                          <h6 className="text-white font-weight-bold">8 lessons/month</h6>
-                          <p className="text-white">$480</p>
-                        </CardBody>
-                      </Card>
-                      <UncontrolledTooltip delay={0} target="plan_4">
-                        Visit our homepage to fill out the signup form
-                      </UncontrolledTooltip>
+                      <a href="https://forms.gle/zuUbnSD5xVjAwspb9" target="_blank">
+                        <Card 
+                          className="card-lift--hover shadow border-0 bg-gradient-info"
+                          href="https://forms.gle/zuUbnSD5xVjAwspb9"
+                          target="_blank"
+                          id="plan_4"
+                        >
+                          <CardBody className="py-5">
+                            <h6 className="text-white font-weight-bold">8 lessons/month</h6>
+                            <p className="text-white">$480</p>
+                          </CardBody>
+                        </Card>
+                        {/* <UncontrolledTooltip delay={0} target="plan_4">
+                          Please fill out the signup form and our staff members will contact you
+                        </UncontrolledTooltip> */}
+                      </a>
                     </Col>
                   </Row>
                 </Col>
