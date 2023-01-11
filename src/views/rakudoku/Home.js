@@ -1,4 +1,5 @@
 import React from "react";
+import { osName } from "react-device-detect";
 // nodejs library that concatenates classes
 import classnames from "classnames";
 
@@ -56,7 +57,8 @@ class Home extends React.Component {
   state = {
     tabsLeft: 1,
     tabsRight: 1,
-    isMobile: window.innerWidth < 992
+    isMobile: window.innerWidth < 992,
+    os: osName
   };
   toggleNavs = (e, state, index) => {
     e.preventDefault();
@@ -64,6 +66,13 @@ class Home extends React.Component {
       [state]: index
     });
   };
+  scrollTo = (os, id) => {
+    if (os === "iOS") {
+      document.getElementById(id).scrollIntoView(true);
+    } else {
+      document.getElementById(id).scrollIntoView({behavior: "smooth", block: "start"});
+    }
+  }
   componentDidMount() {
     document.documentElement.scrollTop = 0;
     document.scrollingElement.scrollTop = 0;
@@ -299,9 +308,7 @@ class Home extends React.Component {
                             href="#pablo"
                             onClick={(e) => {
                               e.preventDefault();
-                              document.getElementById("testimonial").scrollIntoView({
-                                behavior: "smooth", block: "start"
-                              });
+                              this.scrollTo(this.state.os, "testimonial");
                             }}
                           >
                             Learn more
@@ -332,9 +339,7 @@ class Home extends React.Component {
                             href="#pablo"
                             onClick={(e) => {
                               e.preventDefault();
-                              document.getElementById("testimonial").scrollIntoView({
-                                behavior: "smooth", block: "start"
-                              });
+                              this.scrollTo(this.state.os, "testimonial");
                             }}
                           >
                             Learn more
@@ -367,9 +372,7 @@ class Home extends React.Component {
                             href="#pablo"
                             onClick={(e) => {
                               e.preventDefault();
-                              document.getElementById("testimonial").scrollIntoView({
-                                behavior: "smooth", block: "start"
-                              });
+                              this.scrollTo(this.state.os, "testimonial");
                             }}
                           >
                             Learn more
