@@ -210,7 +210,7 @@ class AboutUs extends React.Component {
 
           <section className="section section-lg">
             <Container>
-              <Row>
+              <Row className="justify-content-center">
                 <Col lg="6">
                   <h3 className="display-4">
                     Testimonial
