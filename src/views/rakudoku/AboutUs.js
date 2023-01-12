@@ -161,7 +161,7 @@ class AboutUs extends React.Component {
                 <Col lg="8">
                   <h2 className="display-3 font-weight-light text-white">
                     Currently, RAKUDOKU has <a className="font-weight-bold">83</a> schools in Japan. 
-                    And we are opening our first school oversea in <a className="font-weight-bold">California, USA</a>
+                    And we are opening our first school in <a className="font-weight-bold">California, USA</a>
                   </h2>
                 </Col>
               </Row>
