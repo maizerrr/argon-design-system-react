@@ -211,10 +211,10 @@ class AboutUs extends React.Component {
           <section className="section section-lg">
             <Container>
               <Row className="justify-content-center">
+                <h3 className="display-4">Testimonial</h3>
+              </Row>
+              <Row className="justify-content-center">
                 <Col lg="6">
-                  <h3 className="display-4">
-                    Testimonial
-                  </h3>
                   <p className="lead">
                     At first I was skeptical, but Rakudoku has truly surprised me by bringing out more of my potential. 
                     The teachers are some of the nicest, most intuitive people out there. Not only have I learned to 
@@ -234,6 +234,35 @@ class AboutUs extends React.Component {
                       <h5 className="title">
                         <span className="d-block mb-1">Caprianna</span>
                         <small className="h6 text-muted">23, San Francisco</small>
+                      </h5>
+                    </div>
+                  </div>
+                </Col>
+              </Row>
+              <Row className="justify-content-center">
+                <Col lg="6">
+                  <p className="lead">
+                    After struggling with timing in my exams, I decided to try Rakudoku. After a 
+                    couple of sessions with a lovely teacher, I noticed I had more time in my exams 
+                    as I was not taking as long to read the questions. I would recommend Rakudoku 
+                    to anyone who feels they could improve their speed reading. Not only has Rakudoku 
+                    helped me to speed read, it has also allowed me to make life long friends around 
+                    the world.
+                  </p>
+                </Col>
+                <Col className="mb-5 mb-lg-0" lg="6" md="6">
+                  <br />
+                  <div className="px-4">
+                    <img 
+                      alt="..."
+                      className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
+                      src={require("assets/img/theme/testimonial-2.jpg")}
+                      style={{ width: "200px" }}
+                    />
+                    <div className="pt-4 text-center">
+                      <h5 className="title">
+                        <span className="d-block mb-1">Mia</span>
+                        <small className="h6 text-muted">18, UK</small>
                       </h5>
                     </div>
                   </div>
