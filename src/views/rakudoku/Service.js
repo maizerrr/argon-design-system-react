@@ -111,7 +111,7 @@ class Service extends React.Component {
               </Row>
               <Row className="justify-content-center">
                 <Col lg="12">
-                  <Row className="row-grid">
+                  {/* <Row className="row-grid">
                     <Col lg="6">
                       <a href="https://forms.gle/zuUbnSD5xVjAwspb9" target="_blank">
                         <Card 
@@ -123,12 +123,24 @@ class Service extends React.Component {
                             <p className="text-white">free</p>
                           </CardBody>
                         </Card>
-                        {/* <UncontrolledTooltip delay={0} target="plan_0">
-                          Please fill out the signup form and our staff members will contact you
-                        </UncontrolledTooltip> */}
                       </a>
                     </Col>
                     <Col lg="6">
+                      <a href="https://forms.gle/zuUbnSD5xVjAwspb9" target="_blank">
+                        <Card 
+                          className="card-lift--hover shadow border-0 bg-gradient-warning"
+                          id="plan_1"
+                        >
+                          <CardBody className="py-5">
+                            <h6 className="text-white font-weight-bold">2 lessons/month</h6>
+                            <p className="text-white">$120</p>
+                          </CardBody>
+                        </Card>
+                      </a>
+                    </Col>
+                  </Row> */}
+                  <Row className="row-grid">
+                    <Col lg="3">
                       <a href="https://forms.gle/zuUbnSD5xVjAwspb9" target="_blank">
                         <Card 
                           className="card-lift--hover shadow border-0 bg-gradient-warning"
@@ -144,9 +156,7 @@ class Service extends React.Component {
                         </UncontrolledTooltip> */}
                       </a>
                     </Col>
-                  </Row>
-                  <Row className="row-grid">
-                    <Col lg="4">
+                    <Col lg="3">
                       <a href="https://forms.gle/zuUbnSD5xVjAwspb9" target="_blank">
                         <Card 
                           className="card-lift--hover shadow border-0 bg-gradient-primary"
@@ -164,7 +174,7 @@ class Service extends React.Component {
                         </UncontrolledTooltip> */}
                       </a>
                     </Col>
-                    <Col lg="4">
+                    <Col lg="3">
                       <a href="https://forms.gle/zuUbnSD5xVjAwspb9" target="_blank">
                         <Card 
                           className="card-lift--hover shadow border-0 bg-gradient-default"
@@ -182,7 +192,7 @@ class Service extends React.Component {
                         </UncontrolledTooltip> */}
                       </a>
                     </Col>
-                    <Col lg="4">
+                    <Col lg="3">
                       <a href="https://forms.gle/zuUbnSD5xVjAwspb9" target="_blank">
                         <Card 
                           className="card-lift--hover shadow border-0 bg-gradient-info"

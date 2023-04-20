@@ -160,8 +160,6 @@ class Home extends React.Component {
                   <p className="lead text-dark">
                     In Japan, more than 50,000 people have taken the RAKUDOKU trial seminar, 
                     and more than 90% of them have realized the effect of speed reading. 
-                    If you want to experience speed reading, we offer a free trial seminar 
-                    until the end of January, 2023.
                   </p>
                 </Col>
                 <Col className="mb-lg-auto" lg="5">
