@@ -384,6 +384,29 @@ class Home extends React.Component {
             </Container>
           </section>
 
+          <section className="section section-lg">
+            <Container>
+              <Row className="justify-content-between text-left">
+                <Col lg="6">
+                  <div className="rounded shadow-lg overflow-hidden transform-perspective-left">
+                    <Card className="border-0">
+                      <CardImg 
+                        alt="..."
+                        src={require("assets/img/theme/image-6.jpeg")}
+                        top
+                      />
+                    </Card>
+                  </div>
+                </Col>
+                <Col lg="6">
+                  <p className="h3">
+                    Practice and improve your Japanese through our Rakudoku lessons!
+                  </p>
+                </Col>
+              </Row>
+            </Container>
+          </section>
+
           <section className="section section-lg section-shaped pb-150">
             <div className="shape shape-style-1 shape-default bg-gradient-default">
               <span />
